@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pneus Planalto Auto Center</title>
+  <title>Serviços - Pneus Planalto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<script src="script.js"></script>
 <body>
-  <!-- HEADER ESTÁTICO -->
+<canvas id="background-bubbles"></canvas>
+
+  <!-- CABEÇALHO -->
   <header>
-    <h1>Pneus Planalto Auto Center</h1>
-    <p>Com você, não importa o caminho!</p>
+    <img src="capa principal.png" alt="Banner Pneus Planalto" width="900" height="200" style="display: block; margin: 0 auto;" />
   </header>
 
   <!-- CHECKUP INICIAL -->
@@ -30,15 +32,16 @@
     </div>
   </section>
 
-  <!-- PRINCIPAL -->
+  <!-- SERVIÇOS ESSENCIAIS -->
   <section class="menu-section principal">
     <h2>Serviços Essenciais</h2>
 
+    <!-- Cada item abaixo representa um serviço -->
     <div class="item">
       <img src="troca de pneus.png" alt="Troca de Pneus" />
       <div class="item-info">
         <h3>Troca de Pneus</h3>
-        <p>Pneus carecas = risco real. Dirija seguro.</p>
+        <p>Pneus carecas colocam vidas em risco. Troque e dirija com segurança.</p>
       </div>
     </div>
 
@@ -46,15 +49,15 @@
       <img src="alinhamento (1).png" alt="Alinhamento e Balanceamento" />
       <div class="item-info">
         <h3>Alinhamento & Balanceamento</h3>
-        <p>Para que seu carro siga em linha reta, sem puxar pro lado e sem sustos na direção</p>
+        <p>Evite que o carro puxe para os lados e reduza o desgaste dos pneus.</p>
       </div>
     </div>
-    
+
     <div class="item">
       <img src="desempeno de rodas.png" alt="Desempeno de Rodas" />
       <div class="item-info">
         <h3>Desempeno de Rodas</h3>
-        <p>Roda empenada faz o carro tremer, gasta pneu, aumenta o consumo e ainda atrapalha a direção.</p>
+        <p>Rodas empenadas causam trepidação no carro, desgaste irregular dos pneus e dificuldade na direção.</p>
       </div>
     </div>
 
@@ -62,7 +65,7 @@
       <img src="pastilhas de freio.png" alt="Pastilhas de Freio" />
       <div class="item-info">
         <h3>Pastilhas de Freio</h3>
-        <p>Freio fraco? Troque antes de virar risco.</p>
+        <p>Freios fracos colocam sua segurança em risco. Troque as pastilhas no tempo certo e evite acidentes.</p>
       </div>
     </div>
 
@@ -70,17 +73,17 @@
       <img src="troca de oleo.png" alt="Troca de Óleo" />
       <div class="item-info">
         <h3>Troca de Óleo</h3>
-        <p>Proteja o motor do superaquecimento.</p>
+        <p>Óleo vencido não lubrifica, causa desgaste nas peças, superaquecimento e pode até fundir o motor.</p>
       </div>
     </div>
   </section>
 
-  <!-- EXTRAS -->
+  <!-- SERVIÇOS EXTRAS -->
   <section class="menu-section extras">
     <h2>Extras & Complementos</h2>
 
     <div class="item">
-      <img src="https://via.placeholder.com/100/ffcc00/FFFFFF?text=Oz%C3%B4nio" alt="Ozônio" />
+      <img src="ozonio.png" alt="Limpeza com Ozônio" />
       <div class="item-info">
         <h3>Limpeza com Ozônio</h3>
         <p>Ar puro e livre de fungos no carro.</p>
@@ -88,7 +91,7 @@
     </div>
 
     <div class="item">
-      <img src="https://via.placeholder.com/100/ffcc00/FFFFFF?text=Coxim" alt="Troca de Coxins" />
+      <img src="troca coxim.png" alt="Troca de Coxins" />
       <div class="item-info">
         <h3>Troca de Coxins</h3>
         <p>Vibração e ruído? É hora de trocar!</p>
@@ -96,7 +99,7 @@
     </div>
 
     <div class="item">
-      <img src="https://via.placeholder.com/100/ffcc00/FFFFFF?text=Piv%C3%B4" alt="Pivôs" />
+      <img src="troca de pivo e articulação.png" alt="Troca de Pivôs & Articulações" />
       <div class="item-info">
         <h3>Troca de Pivôs & Articulações</h3>
         <p>Rodas seguras, direção precisa.</p>
@@ -104,7 +107,7 @@
     </div>
 
     <div class="item">
-      <img src="https://via.placeholder.com/100/ffcc00/FFFFFF?text=Bucha" alt="Buchas e Batentes" />
+      <img src="bucha.png" alt="Buchas e Batentes" />
       <div class="item-info">
         <h3>Buchas & Batentes</h3>
         <p>Conforto e estabilidade nas ruas ruins.</p>
@@ -112,11 +115,38 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>📍 Pneus Planalto — Atendimento em 6 unidades | Luiz V. Queiroz</p>
-  </footer>
+ <!-- RODAPÉ -->
+<footer class="footer">
+  <div class="footer-container">
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <!-- Coluna 1: Lojas -->
+    <div class="footer-column">
+      <h4>Nossas Lojas</h4>
+      <ul>
+        <li><a href="https://www.google.com.br/maps/place/Pneus+Planalto+Auto+Center/@-18.9083588,-48.2757724,17z/data=!3m1!4b1!4m6!3m5!1s0x94a445b1ec957771:0x20344df82ad48914!8m2!3d-18.9083588!4d-48.2731975!16s%2Fg%2F12hnnw5bw?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Av. Brasil, 1534 – Uberlândia</a> • (34) 3236-0010</li>
+        <li><a href="https://www.google.com/maps/place/Pneus+Planalto+Auto+Center/@-18.9297144,-48.2460539,17z/data=!..." target="_blank">Av. João Naves, 5000 – Uberlândia</a> • (34) 3257-5000</li>
+        <li><a href="https://www.google.com/maps/place/Pneus+Planalto+Auto+Center/@-18.8976701,-48.2651495,17z/data=!..." target="_blank">Av. Afonso Pena, 3237 – Uberlândia</a> • (34) 3236-3747</li>
+        <li><a href="https://www.google.com/maps/place/Pneus+Planalto+Continental/@-18.9026617,-48.2665802,17z/data=!..." target="_blank">Av. Floriano Peixoto, 2730 – Uberlândia</a> • (34) 3222-6888</li>
+        <li><a href="https://www.google.com.br/maps/place/Pneus+Planalto+Auto+Center/@-19.7686804,-47.9466732,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x94a445b1ec957771:0x20344df82ad48914!2sPneus+Planalto+Auto+Center!8m2!3d-18.9083588!4d-48.2731975!16s%2Fg%2F12hnnw5bw!3m5!1s0x94bad1cf5e21b91b:0x6df529eb56329fe5!8m2!3d-19.7686855!4d-47.9440983!16s%2Fg%2F11gnn4_bfy?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Fernando Costa, 821 – Uberaba</a> • (34) 3338-0010</li>
+        <li><a href="https://www.google.com/maps/place/Pneus+Planalto+Araguari/@-18.6494905,-48.1979038,17z/data=!..." target="_blank">Rua Márciano Santos, 653 – Araguari</a> • (34) 3512-7676</li>
+      </ul>
+    </div>
+
+    <!-- Coluna 2: Atendimento + Redes Sociais -->
+    <div class="footer-column">
+      <h4>Atendimento</h4>
+      <ul>
+        <li>Seg a Sex: 08h – 18h</li>
+        <li>Sábado: 08h – 12h</li>
+        <li>Domingo e Feriados: Fechado</li>
+      </ul>
+
+      <h4>Redes Sociais</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/pneusplanalto/"><img src="facebook-new.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/pneusplanalto/"><img src="instagram-circle.png" alt="Instagram" /></a>
+        <a href="https://www.youtube.com/channel/UC-2RL3aMeeoYsueIo8RDpFA"><img src="youtube.png" alt="Youtube" /></a>
+      </div>
+    </div>
+  </div>
+</footer>
